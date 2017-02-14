@@ -12,7 +12,6 @@ public class Perceptron {
 		int p = outputs.length;
 		weights = new double[n];
 		Random r = new Random();
-
 		for (int i = 0; i < n; i++) {
 			weights[i] = r.nextDouble();
 		}
