@@ -11,7 +11,7 @@ public class PerceptonTest {
 
 	private Perceptron p;
 
-	@Test @Ignore	
+	@Test @Ignore // kkk xor is not linearly separable with two dimensions... will work never
 	public void xorBehavior() {
 			double inputs[][] = { { 0, 0 }, { 0, 1 }, { 1, 0 }, { 1, 1 } };
 			int outputs[] = { 0, 1, 1, 0 };

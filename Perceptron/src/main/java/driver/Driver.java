@@ -22,6 +22,6 @@ public class Driver {
 		Graphics2D g = (Graphics2D) f.getGraphics();
 		g.setColor(Color.BLUE);
 		g.drawRect(0, 300, 50, 50);
-		g.fillRect(0, 0, 50, 50);
+		g.fillRect(0, 300, 50, 50);
 	}
 }
