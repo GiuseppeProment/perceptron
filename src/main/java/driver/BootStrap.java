@@ -9,6 +9,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.concurrent.TimeUnit;
 
 import driver.Jumper.GuyReaction;
 
@@ -111,7 +112,7 @@ class Jumper {
 	void run() throws InterruptedException {
 		while (true) {
 			if ( guyReaction.hasToJump(this) ) { keySensor.pressed = true; }
-			Thread.sleep(TURN_TIME);
+			TimeUnit.MILLISECONDS.sleep(TURN_TIME);
 			moveRock();
 			moveGuy();
 			if (isGuySmashed()) {
